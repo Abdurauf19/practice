@@ -26,6 +26,13 @@
       </div>
     
     </div>
+    <!-- Footer  -->
+      <footer class="footer">
+        <div class="container">
+          <foooter :footerTitle="'Copyright ©2020 All rights reserved '" />
+        </div>
+      </footer>
+
 </template>
 
 <script>
@@ -33,6 +40,7 @@ import headerNav from "../components/headerNav.vue";
 import headerContent from "../components/headerContent.vue";
 import headerPost from "../components/mainPosts.vue";
 import mainWork from "../components/headerWork.vue";
+import foooter from "../components/footer.vue"
 
 export default {
   components: {
@@ -40,6 +48,7 @@ export default {
     headerContent,
     headerPost,
     mainWork,
+    foooter
   },
   data() {
     return {
@@ -63,21 +72,21 @@ export default {
 
     datas: [
       {
-        // img:  require('../photos/portfolioimg/portolio5.png'),
+        // img: require('../photo/workphoto1'),
         workContentTitle:"Designing Dashboards",
         workDataText:"2020",
         workDataTextt:"Dashboard",
         workContentText:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
       },
       {
-        // img:  require('../photos/portfolioimg/portolio5.png'),
+        // img :require('../photo/workphoto2'),
         workContentTitle:"Vibrant Portraits of 2020",
         workDataText:"2018",
         workDataTextt:"Illustration",
         workContentText:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
       },
       {
-        // img:  require('../photos/portfolioimg/portolio5.png'),
+        // img: require('../photo/workphoto3'),
         workContentTitle:"36 Days of Malayalam type",
         workDataText:"2018",
         workDataTextt:"Typography",

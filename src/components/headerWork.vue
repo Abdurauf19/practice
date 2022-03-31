@@ -1,6 +1,6 @@
 <template >
   <div class="container">
-    <img href="{{img}}" alt="mainWork" />
+    <img :src="img" alt="mainWork" />
     <div class="main-work__content">
       <h2 class="work-content__title">{{workContentTitle}}</h2>
       <div class="main-work__data">
@@ -17,7 +17,7 @@
 <script>
 export default {
   props:{
-    img :{
+    img:{
         type:String,
     },
     workContentTitle :{
