@@ -55,7 +55,20 @@ export default {
   border-bottom: 1px solid #E0E0E0;
   gap:20px
 }
+.container img{
+ max-width: 246px;
+ max-height: 180px;
+ margin-bottom: 15px;
+ border-radius: 6px;
+ transition: all .4s;
+}
+.container img:hover {
+  transform: scale(1.1);
+}
+.container img:hover .container  {
+  column-gap:35px;
 
+}
 .main-work__content {
   display: flex;
   flex-direction:column;
@@ -79,6 +92,11 @@ export default {
   font-size: 18px;
   font-weight: 400;
   border-radius:16px;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.work-data__text:hover {
+opacity: 1;
 }
 .ttt {
   color: #FFFF;
@@ -94,9 +112,24 @@ padding: 0 10px;
   max-width: 594px;
 }
 
- @media only screen and (max-width:567px) {
+
+  @media only screen and (max-width:768px) {
+    .container img {
+      max-width: 768px;
+      width: 100%;
+      max-height: 180px;
+    }
     .container {
       flex-direction: column;
     }
   }
+
+ @media only screen and (max-width:567px) {
+    .container {
+      flex-direction: column;
+    }
+
+  }
+
+ 
 </style>

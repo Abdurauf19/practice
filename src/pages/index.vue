@@ -72,21 +72,21 @@ export default {
 
     datas: [
       {
-        // img: require('../photo/workphoto1'),
+        img: 'https://picsum.photos/500/500',
         workContentTitle:"Designing Dashboards",
         workDataText:"2020",
         workDataTextt:"Dashboard",
         workContentText:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
       },
       {
-        // img :require('../photo/workphoto2'),
+        img: 'https://picsum.photos/500/500',
         workContentTitle:"Vibrant Portraits of 2020",
         workDataText:"2018",
         workDataTextt:"Illustration",
         workContentText:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
       },
       {
-        // img: require('../photo/workphoto3'),
+        img: 'https://picsum.photos/500/500',
         workContentTitle:"36 Days of Malayalam type",
         workDataText:"2018",
         workDataTextt:"Typography",
@@ -134,7 +134,11 @@ export default {
     padding-bottom: 100px;
   }
 
-
+   @media only screen and (max-width:635px) {
+      .containerr {
+        flex-direction: column;
+      }
+    }
   @media only screen and (max-width:567px) {
     .containerr  {
       flex-direction: column;
@@ -143,5 +147,6 @@ export default {
       padding: 20px 0 30px 41px;
       line-height: 30px;
     }
+    
   }
 </style>

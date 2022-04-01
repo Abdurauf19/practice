@@ -3,7 +3,7 @@
     <div class="header-content">
       <h2 class="header-content__title">{{title}}</h2>
       <p class="header-content__text">{{text}}</p>
-      <a  href="#" class="header-content__btn">{{btn}}</a>
+      <a  href="../photo/resume/Abdurauf.pdf" download class="header-content__btn">{{btn}}</a>
     </div>
     <img src="../photo/headerbanner.png" alt="headear-banner" class="header-banner">
 </div>
@@ -72,6 +72,15 @@ export default {
     font-weight: 500;
     padding: 9px 21px 17px 21px;
   }
+    @media only screen and (max-width:680px) {
+      .container {
+      flex-direction: column-reverse;
+    }
+
+    .header-content {
+      padding-top: 31px;
+    }
+    }
 
   @media only screen and (max-width:567px) {
     .container {
@@ -82,7 +91,23 @@ export default {
       padding-top: 31px;
     }
     .header-content__title {
-      font-size: 32px;
+      font-size: 29px;
+    }
+  }
+
+  @media only screen and (max-width:367px) {
+      .header-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .header-content__title {
+            text-align: center;
+      }
+
+      .header-content__text {
+      text-align: center;
     }
   }
 
