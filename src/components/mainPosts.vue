@@ -78,13 +78,6 @@ export default {
     font-weight: 400;
   }
 
-  .main-post__text {
-    color: #00A8CC;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: right;
-  }
-
   .post-box__title {
     font-size: 26px;
     font-weight: 700;

@@ -4,13 +4,13 @@
       <nav class="header-nav">
         <ul class="header-nav__list md:flex" >
           <li class="header-nav__item">
-            <a href="#Nav" class="header-nav__link">{{links}}</a>
+            <a href="#Work" class="header-nav__link">{{links}}</a>
           </li>
           <li class="header-nav__item">
-            <a href="#Nav" class="header-nav__link">{{links2}}</a>
+            <a href="#Blog" class="header-nav__link">{{links2}}</a>
           </li>
           <li class="header-nav__item">
-            <a href="#Nav" class="header-nav__link">{{links3}}</a>
+            <a href="#Contact" class="header-nav__link">{{links3}}</a>
           </li>
         </ul>
       </nav>
@@ -22,13 +22,13 @@
       <nav v-if="show" class="side-bar">
         <ul class="nav-sideBar_list">
           <li class="nav-sideBar-item">
-            <a href="#" class="nev-sideBar-link">Works</a>
+            <a href="#Work" class="nev-sideBar-link">{{links}}</a>
             </li>
           <li class="nav-sideBar-item">
-            <a href="#" class="nev-sideBar-link">Blog</a>
+            <a href="#Blog" class="nev-sideBar-link">{{links2}}</a>
             </li>
           <li class="nav-sideBar-item">
-            <a href="#" class="nev-sideBar-link">Contact</a>
+            <a href="#Contact" class="nev-sideBar-link">{{links3}}</a>
             </li>
         <div v-on:click="show = !show" class="nav-sideBar__close">
           <div class="sideBar-close__line" id="close-line"></div>
@@ -80,6 +80,7 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   a{text-decoration: none;}
   ul{list-style: none;}

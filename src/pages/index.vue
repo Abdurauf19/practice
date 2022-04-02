@@ -7,31 +7,39 @@
       :text="'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'"
       :btn="'Download Resume'"/>
     </div>
+    <router-link to="/About">About</router-link>
     <!-- Header content -->
      <div class="main-post-content">
         <h3 class="main-post__title">Recent posts</h3>
         <a href="#" class="main-post__text">View all</a>
       </div>  
       <!-- main works -->
-    <div class="containerr">
+    <div id="Blog" class="containerr">
     <div v-for="(item, i) in data" :key="i">
     <headerPost :postBoxTitle="item.postBoxTitle" :boxDataText="item.boxDataText" :boxDataTextt="item.boxDataText" :postBoxText="item.postBoxText" />
     </div>
     </div>
     <!-- Featured works -->
       <h1 class="Featured-title">Featured works</h1>
-    <div class="container Featured-container">
+    <div id="Work" class="container Featured-container">
       <div v-for="(item, i) in datas" :key="i">
           <mainWork :img="item.img" :workContentTitle="item.workContentTitle" :workDataText="item.workDataText" :workDataTextt="item.workDataTextt" :workContentText="item.workContentText"/>
       </div>
     
     </div>
+
+       <!-- Login Form -->
+          <main class="LoginForm">
+            <LoginForm :Email="'Email'" :Password="'Password:'"/>
+          </main>
+
     <!-- Footer  -->
-      <footer class="footer">
+      <footer id="Contact" class="footer">
         <div class="container">
           <foooter :footerTitle="'Copyright ©2020 All rights reserved '" />
         </div>
       </footer>
+         
 
 </template>
 
@@ -40,7 +48,8 @@ import headerNav from "../components/headerNav.vue";
 import headerContent from "../components/headerContent.vue";
 import headerPost from "../components/mainPosts.vue";
 import mainWork from "../components/headerWork.vue";
-import foooter from "../components/footer.vue"
+import foooter from "../components/footer.vue";
+import LoginForm from '../components/LoginFrom.vue'
 
 export default {
   components: {
@@ -48,11 +57,11 @@ export default {
     headerContent,
     headerPost,
     mainWork,
-    foooter
+    foooter,
+    LoginForm
   },
   data() {
     return {
-    
       data: [
     {
       postBoxTitle:"Making a design system from scratch",
@@ -133,6 +142,16 @@ export default {
     gap: 40px;
     padding-bottom: 100px;
   }
+  .main-post__text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    transition:all .4s ease-in-out;
+  }
+  .main-post__text:hover{
+    color: tomato;
+  }
 
    @media only screen and (max-width:635px) {
       .containerr {
@@ -148,5 +167,13 @@ export default {
       line-height: 30px;
     }
     
+  }
+
+
+
+  /* Practice */
+
+  .LoginForm {
+    background-color: #21243D;
   }
 </style>

@@ -70,9 +70,14 @@ export default {
     font-size: 20px;
     line-height: 29px;
     font-weight: 500;
-    padding: 9px 21px 17px 21px;
+    padding: 11px 21px;
+    transition: all .4s ease-in-out;
   }
-    @media only screen and (max-width:680px) {
+  .header-content__btn:hover {
+      background-color: black;
+      color: #FF6464;
+  }
+    @media only screen and (max-width:700px) {
       .container {
       flex-direction: column-reverse;
     }
