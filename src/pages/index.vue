@@ -49,7 +49,7 @@ import headerContent from "../components/headerContent.vue";
 import headerPost from "../components/mainPosts.vue";
 import mainWork from "../components/headerWork.vue";
 import foooter from "../components/footer.vue";
-import LoginForm from '../components/LoginFrom.vue'
+import LoginForm from '../components/LoginFrom.vue';
 
 export default {
   components: {
