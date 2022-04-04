@@ -10,7 +10,8 @@
         <p class="post-box__text">{{ postBoxText }}</p>
       </div>
     </div>
-  </main>
+  </main>yarn dev
+
 </template>
 
 <script>
@@ -98,4 +99,6 @@ export default {
 #text1 {
   border-right: 1px solid #000;
 }
+
+
 </style>
