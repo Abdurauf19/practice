@@ -7,7 +7,6 @@
       :text="'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.'"
       :btn="'Download Resume'"/>
     </div>
-    <router-link to="/About">About</router-link>
     <!-- Header content -->
      <div class="main-post-content">
         <h3 class="main-post__title">Recent posts</h3>
