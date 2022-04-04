@@ -2,7 +2,7 @@
   <div>
     <header class="header ">
       <nav class="header-nav">
-        <ul class="header-nav__list md:flex" >
+        <!-- <ul class="header-nav__list md:flex" >
           <li class="header-nav__item">
             <a href="#Work" class="header-nav__link">{{links}}</a>
           </li>
@@ -12,7 +12,7 @@
           <li class="header-nav__item">
             <a href="#Contact" class="header-nav__link">{{links3}}</a>
           </li>
-        </ul>
+        </ul> -->
       </nav>
       <div v-on:click="show = !show" class="header-hamburger">
         <div class="hamburger-line"></div>
@@ -92,24 +92,6 @@ export default {
     align-items: center;
     padding: 27px 60px 0 0;
   }
-  
-
-  .header-nav__link {
-    font-family: var(--Font_B);
-    color: var(--Dark);
-    font-size: 20px;
-    line-height: 28px;
-    opacity: 0.6;
-    transition: all .4s ease-in-out;
-  }
-
-
-    .header-nav__item {
-      transition:all ease-in-out .4s;
-    }
-    .header-nav__item:hover {
-      transform: translateY(-5px);
-    }
 
   .header-nav__link:hover {
     opacity: 1;
