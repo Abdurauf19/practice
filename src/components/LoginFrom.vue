@@ -3,7 +3,7 @@
    <label for="email">{{Email}}</label>
    <input v-model="email" type="text" id="email" required>
    <label for="password">{{Password}}</label>
-   <input v-model="password" type="password" id="password" required>
+   <input v-model="password" :type="showPass === true ? 'text' : 'password'" id="password" required>
    <div v-if="passwordError" class="error">{{passwordError}}</div>
    
    <label for="select">Role</label>
@@ -26,9 +26,14 @@
      <label for="Checkbox">Accept terms and conditions</label>
    </div>
 
+   <div class="terms">
+     <label for="Checkboxx" v-if="!showPass" @click="showPass= !showPass" >Show password</label>
+     <label for="Checkboxx"  v-if="showPass" @click="showPass= !showPass" >hide password</label>
+   </div>
    <div class="submit">
      <button>Create an Account</button>
    </div>
+
 
  </form>
 </template>
@@ -53,6 +58,7 @@ export default {
       tempSkill: '',
       skills: [],
       passwordError: '',
+      showPass:'',
     }
   },
 
@@ -82,6 +88,7 @@ export default {
        console.log('Terms accebted: ', this.terms);
      }
     }
+
   }
 }
 </script>
