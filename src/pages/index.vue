@@ -125,7 +125,7 @@ body {
   line-height: 60px;
   color: #21243d;
   padding-top: 20px;
-  padding-left: 148px;
+  padding-left: 295px;
 }
 .main-post-content {
   display: flex;
@@ -147,7 +147,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;А
+  gap: 40px;
 }
 .main-post__text {
   color: var(--text-color);

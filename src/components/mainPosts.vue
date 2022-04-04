@@ -10,7 +10,7 @@
         <p class="post-box__text">{{ postBoxText }}</p>
       </div>
     </div>
-  </main>yarn dev
+  </main>
 
 </template>
 

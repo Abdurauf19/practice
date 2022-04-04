@@ -220,9 +220,4 @@ button {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .mainn{
-    flex-direction: column;
-  }
-}
 </style>
